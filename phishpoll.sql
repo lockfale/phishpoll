@@ -80,6 +80,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
+
+-- --------------------------------------------------------
+
+--
+-- Initial user creation - Admin/phPhish
+-- change db name below as needed
+--
+Use phishpoll;
+GO
+CREATE LOGIN admin
+  WITH PASSWORD   = N 'd3781d0884ca204d148be627933d36e4';
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
